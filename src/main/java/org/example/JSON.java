@@ -1,9 +1,8 @@
 package org.example;
 
-public class JSON implements FormatoJson {
-
+public class JSON implements Formato {
     @Override
-    public String aceitar(JsonVisitor visitor) {
-        return visitor.exibirJson(this);
+    public String aceitar(Visitor visitor) {
+        return visitor.exibir(this);
     }
 }

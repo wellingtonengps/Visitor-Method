@@ -4,12 +4,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class XmlVisitorTest {
+class XMLVisitorTest {
     @Test
-    void deveExibirXml(){
-        XML xml = new XML();
+    void deveExibirXML() {
+        Formato formato = FormatoFactory.obterFormato("XLM");
 
-        XmlVisitor visitor = new XmlVisitor();
-        assertEquals("xml", visitor.exibir(xml));
+        XMLVisitor visitor = new XMLVisitor();
+        assertEquals("xml", visitor.exibir(formato));
     }
 }

@@ -1,9 +1,9 @@
 package org.example;
 
-public class JsonVisitor {
-    public String exibir(FormatoJson formato) {return formato.aceitar(this);}
+public class JSONVisitor implements Visitor {
 
-    public String exibirJson(JSON json) {
+    @Override
+    public String exibir(Formato formato) {
         return "json";
     }
 }

@@ -1,9 +1,9 @@
 package org.example;
 
-public class XML implements FormatoXml {
+public class XML implements Formato {
 
     @Override
-    public String aceitar(XmlVisitor visitor) {
-        return visitor.exibirXml(this);
+    public String aceitar(Visitor visitor) {
+        return visitor.exibir(this);
     }
 }

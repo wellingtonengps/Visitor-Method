@@ -4,12 +4,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class JsonVisitorTest {
+class JSONVisitorTest {
     @Test
-    void deveExibirJson(){
-        JSON json = new JSON();
+    void deveExibirJSON() {
+        Formato formato = FormatoFactory.obterFormato("JSON");
 
-        JsonVisitor visitor = new JsonVisitor();
-        assertEquals("json", visitor.exibir(json));
+        JSONVisitor visitor = new JSONVisitor();
+        assertEquals("json", visitor.exibir(formato));
     }
 }
