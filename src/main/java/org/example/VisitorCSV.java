@@ -1,9 +1,8 @@
 package org.example;
 
-public class CSVVisitor implements Visitor{
-
+public class VisitorCSV implements Visitor {
     @Override
     public String exibir(Formato formato) {
-        return "csv";
+        return formato.aceitar(this);
     }
 }
